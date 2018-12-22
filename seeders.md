@@ -158,4 +158,4 @@ Una vegada hem fet els seeders, podem executar la següent comanda Artisan per a
 
 ## Referències
 
-https://laravel.com/docs/5.7/seeding
+* **Documentació de Laravel:** [Seeding](https://laravel.com/docs/5.7/seeding)
