@@ -19,10 +19,11 @@
             "notoc": false
         },
         "theme-default": {
-            "showLevel": false
+            "showLevel": true,
+            "showPartLevel": false
         },
         "sunlight-highlighter": {
-            "theme": "light",
+            "theme": "gitbook",
             "lineNumber": false
          }
     }
