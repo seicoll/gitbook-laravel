@@ -1,6 +1,6 @@
-#Instal·lació 
+# Instal·lació 
 
-##Requeriments Laravel
+## Requeriments Laravel
 
 Per la instal·lació de Laravel és molt important tenir en compte les **versions**:
 * Laravel 5.3: PHP >= 5.6.4
@@ -76,40 +76,52 @@ Instal·la Composer a la teva màquina seguint la [documentació oficial](https:
 ```
 
 ### 2. Instal·lar Laravel
-Instal·la la darrera versió de Laravel seguint documentació oficial o bé seguint alguna d'aquestes dues formes:
+Instal·la la darrera versió de Laravel seguint [documentació oficial](https://laravel.com/docs/5.7#installing-laravel) o bé seguint alguna d'aquestes dues formes:
 
 #### 2.1 Via Laravel Installer
-Primer es descarrega l'instal·lador de Laravel utilitzant Composer:
-composer global require "laravel/installer"
-Laravel s'instal·la a $HOME/.config/composer però per poder executar les properes comandes necessitarem tenir $HOME/.config/composer/vendor/bin al nostre $PATH.
-Inserta això al teu $HOME/.profile:
-PATH=$PATH:~/.config/composer/vendor/bin
-Fes logout/login del sistema per activar aquests canvis.
-Crea una app Laravel a la carpeta on guardaràs els teus projectes:
-$ laravel new blog
-Ens crea un nou directori amb la instal·lació de Laravel i totes les seves dependències.
+
+1. Primer es descarrega l'instal·lador de Laravel utilitzant Composer:
+  `composer global require "laravel/installer"`
+
+  Laravel s'instal·la a `$HOME/.config/composer` però per poder executar les properes comandes necessitarem tenir `$HOME/.config/composer/vendor/bin` al nostre $PATH.
+
+2. Inserta això al teu `$HOME/.profile`:
+  `PATH=$PATH:~/.config/composer/vendor/bin`
+  Fes logout/login del sistema per activar aquests canvis.
+
+3. Crea una app Laravel a la carpeta on guardaràs els teus projectes:
+  `$ laravel new blog`
+  Ens crea un nou directori amb la instal·lació de Laravel i totes les seves dependències.
 
 #### 2.2 Via Composer Create-Project
-Situa't a la carpeta del projecte i executa la comanda de Composer create-project en el terminal:
-$ composer create-project --prefer-dist laravel/laravel blog
-blog s'ha de substituir pel nom del teu projecte.
-Això ens descarregarà l'última versió de Laravel i crearà una carpeta anomenada blog amb tot el contingut ja preparat.
+
+1. Situa't a la carpeta del projecte i executa la comanda de Composer `create-project` en el terminal:
+  `$ composer create-project --prefer-dist laravel/laravel blog`
+    * `blog` s'ha de substituir pel nom del teu projecte.
+
+Això ens descarregarà l'última versió de Laravel i crearà una carpeta anomenada `blog` amb tot el contingut ja preparat.
 
 ### 3. Servidor de desenvolupament local
-Si teniu PHP instal·lat localment i voleu utilitzar el servidor de desenvolupament integrat de PHP per a servir la vostra aplicació, podeu utilitzar la comanda Artisan serve.
-Arrenca l'aplicació de prova (inicia un petit servidor de desenvolupament a http: // localhost: 8000):
-$ php artisan serve
-Comprova la app amb el navegador a:
-http://localhost:8000
+
+Si teniu PHP instal·lat localment i voleu utilitzar el servidor de desenvolupament integrat de PHP per a servir la vostra aplicació, podeu utilitzar la comanda Artisan `serve`.
+
+1. Arrenca l'aplicació de prova (inicia un petit servidor de desenvolupament a `http://localhost: 8000`):
+
+  `$ php artisan serve`
+
+2. Comprova la app amb el navegador a:
+  `http://localhost:8000`
 
 ![](/assets/laravel-homepage.png)
 
 
 ### 4. Configuració
-Finalitza la configuració de Laravel seguint la documentació:
-https://laravel.com/docs/5.7#configuration
-Application Key
-Ens hem d'assegurar que estigui correctament configurat és la key o clau de l'aplicació. Aquesta clau és una cadena de 32 caràcters que s'utilitza per codificar les dades. En cas de no establir-la (revisar la variable APP_KEY definida en el fitxer .env) la nostra aplicació no serà segura.
+Finalitza la configuració de Laravel seguint la [documentació](https://laravel.com/docs/5.7#configuration).
+
+
+#### Application Key
+
+Ens hem d'assegurar que estigui correctament configurat és la key o clau de l'aplicació. Aquesta clau és una cadena de 32 caràcters que s'utilitza per codificar les dades. En cas de no establir-la (revisar la variable `APP_KEY` definida en el fitxer `.env`) la nostra aplicació no serà segura.
 Per crear-la simplement hem d'executar la següent comanda a la carpeta arrel de la nostra aplicació:
 
 `php artisan key: generate`
