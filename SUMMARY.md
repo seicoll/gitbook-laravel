@@ -13,5 +13,5 @@
   * [\*Migracions](migracions.md)
   * [\*Seeders](seeders.md)
   * [Models](models.md)
-* [\*REST](rest.md)
+* [REST](rest.md)
 
