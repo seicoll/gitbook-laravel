@@ -6,7 +6,8 @@
         "etoc",
         "-highlight",
         "sunlight-highlighter",
-        "back-to-top-button"
+        "back-to-top-button",
+        "page-toc"
     ],
     "styles": {
         "pdf": "./styles/pdf.css",
@@ -25,6 +26,11 @@
         "sunlight-highlighter": {
             "theme": "gitbook",
             "lineNumber": false
+         },
+         "page-toc":{
+             "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4",
+             "position": "before-first",
+             "showByDefault": true
          }
     }
 }
