@@ -5,7 +5,7 @@
 * [Instal·lació](instalacio.md)
 * [Funcionament bàsic](funcionament.md)
 * [Artisan](artisan.md)
-* [\*Rutes](rutes.md)
+* [Rutes](rutes.md)
 * [\*Vistes](vistes.md)
 * [\*Controladors](controladors.md)
 * [\*Middleware o filtres](filtres.md)
