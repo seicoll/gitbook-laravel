@@ -10,6 +10,7 @@ Per la instal·lació de Laravel és molt important tenir en compte les **versio
 
 
 A més, també són necessàries les següents **extensions**:
+
 OpenSSL PHP Extension
 PDO PHP Extension
 Mbstring PHP Extension
