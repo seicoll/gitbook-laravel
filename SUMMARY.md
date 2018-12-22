@@ -1,5 +1,6 @@
 # Summary
 
+* [Índex](README.md)
 * [Introducció](introduccio.md)
 * [Instal·lació](instalacio.md)
 * [Funcionament bàsic](funcionament.md)
