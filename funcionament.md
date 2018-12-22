@@ -1,4 +1,5 @@
 # Funcionament bàsic
+
 ## Estructura de carpetes
 
 En crear un nou projecte de Laravel se'ns generarà una estructura de carpetes i fitxers per
