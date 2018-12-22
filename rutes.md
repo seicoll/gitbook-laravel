@@ -1,5 +1,7 @@
 # Rutes
 
+## Introducció
+
 > Les **rutes** són les urls disponibles en la nostra aplicació.
 
 Es defineixen al fitxer l'arxiu de rutes situat a `routes/web.php`.
