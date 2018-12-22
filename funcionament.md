@@ -1,3 +1,5 @@
+<!-- notoc -->
+
 # Funcionament bàsic
 
 ## Estructura de carpetes
