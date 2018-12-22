@@ -8,25 +8,32 @@ Per la instal·lació de Laravel és molt important tenir en compte les **versio
 * Laravel 5.6: PHP >= 7.1
 * **Laravel 5.7: PHP >= 7.1.3**
 
-
 A més, també són necessàries les següents **extensions**:
 
-OpenSSL PHP Extension
-PDO PHP Extension
-Mbstring PHP Extension
-Tokenizer PHP Extension
-XML PHP Extension
-Ctype PHP Extension
-JSON PHP Extension
-BCMath PHP Extension
-Si utilitzes Ubuntu 14 o menor actualitza la teva versió de PHP a la 7.0.
+* OpenSSL PHP Extension
+* PDO PHP Extension
+* Mbstring PHP Extension
+* Tokenizer PHP Extension
+* XML PHP Extension
+* Ctype PHP Extension
+* JSON PHP Extension
+* BCMath PHP Extension
+
+Si utilitzes Ubuntu 14 o menor [actualitza la teva versió de PHP a la 7.0](https://www.digitalocean.com/community/tutorials/how-to-upgrade-to-php-7-on-ubuntu-14-04).
+
 Caldran els paquets següents:
-$ sudo apt-get install php-mbstring php-zip php-xml
-Tots aquest requiriments són satisfets per la màquina virtual Laravel Homestead.
-Homestead
-L'equip de Laravel ens ofereix una màquina virtual anomenada Homestead, per facilitar-tos la preparació de l'entorn de desenvolupament en Laravel.
-Homestead és una "Box de Vagrant".
-Vagrant és una capa per sobre de Virtualbox o VMWare que ens permet crear entorns de desenvolupament i les Boxs són imatges de sistemes operatius ja instal·lats.
+
+`$ sudo apt-get install php-mbstring php-zip php-xml`
+
+> Tots aquest requiriments són satisfets per la màquina virtual [Laravel Homestead](https://laravel.com/docs/5.7/homestead).
+
+## Homestead
+
+L'equip de Laravel ens ofereix una màquina virtual anomenada **Homestead**, per facilitar-tos la preparació de l'entorn de desenvolupament en Laravel.
+
+>**Homestead** és una "Box de Vagrant".
+>**Vagrant** és una capa per sobre de Virtualbox o VMWare que ens permet crear entorns de desenvolupament i les **_Boxs_** són imatges de sistemes operatius ja instal·lats.
+
 Software inclòs:
 Ubuntu 18.04
 Git
