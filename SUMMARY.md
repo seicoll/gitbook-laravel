@@ -1,10 +1,9 @@
 # Summary
 
-* [Introduction](README.md)
 * [Introducció](introduccio.md)
 * [Instal·lació](instalacio.md)
 * [Funcionament bàsic](funcionament.md)
-* [\*Artisan](artisan.md)
+* [Artisan](artisan.md)
 * [\*Rutes](rutes.md)
 * [\*Vistes](vistes.md)
 * [\*Controladors](controladors.md)
