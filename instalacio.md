@@ -95,9 +95,11 @@ Instal·la la darrera versió de Laravel seguint [documentació oficial](https:/
 
 #### 2.2 Via Composer Create-Project
 
-1. Situa't a la carpeta del projecte i executa la comanda de Composer `create-project` en el terminal:
+Situa't a la carpeta del projecte i executa la comanda de Composer `create-project` en el terminal:
+
   `$ composer create-project --prefer-dist laravel/laravel blog`
-    * `blog` s'ha de substituir pel nom del teu projecte.
+
+        * `blog` s'ha de substituir pel nom del teu projecte.
 
 Això ens descarregarà l'última versió de Laravel i crearà una carpeta anomenada `blog` amb tot el contingut ja preparat.
 
@@ -116,6 +118,7 @@ Si teniu PHP instal·lat localment i voleu utilitzar el servidor de desenvolupam
 
 
 ### 4. Configuració
+
 Finalitza la configuració de Laravel seguint la [documentació](https://laravel.com/docs/5.7#configuration).
 
 
