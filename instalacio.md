@@ -122,6 +122,7 @@ Finalitza la configuració de Laravel seguint la [documentació](https://laravel
 #### Application Key
 
 Ens hem d'assegurar que estigui correctament configurat és la key o clau de l'aplicació. Aquesta clau és una cadena de 32 caràcters que s'utilitza per codificar les dades. En cas de no establir-la (revisar la variable `APP_KEY` definida en el fitxer `.env`) la nostra aplicació no serà segura.
+
 Per crear-la simplement hem d'executar la següent comanda a la carpeta arrel de la nostra aplicació:
 
 `php artisan key: generate`
