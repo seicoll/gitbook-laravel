@@ -1,8 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-* Introducció
-* Instal·lació
+* [Introducció](introduccio.md)
+* [Instal·lació](instalacio.md)
 * Funcionament bàsic
 * Artisan
 * Rutes
