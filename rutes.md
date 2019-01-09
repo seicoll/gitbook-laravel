@@ -43,8 +43,7 @@ Route::get('/', function () {
   * Retorna una vista anomenada _welcome_.
 
 
-* També indiquen el **mètode** amb el qual s'ha de fer aquesta petició, en aquest cas GET.
-Els dos mètodes més utilitzats són les peticions tipus GET i tipus POST.
+* També indiquen el **mètode HTTP** amb el qual s'ha de fer aquesta petició, en aquest cas GET. Els dos mètodes més utilitzats són les peticions tipus GET i tipus POST.
   * És important indicar que si es realitza una petició tipus POST o d'un altre tipus que no sigui GET a aquesta direcció es retornaria un error ja que aquesta ruta no està definida.
 
 
