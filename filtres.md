@@ -88,3 +88,12 @@ Com hem dit abans, **podem fer tres coses amb una petició**:
   * Llançar una excepció o cridar al mètode `abort` per a mostrar una pàgina d'error:
     
     `abort(403, 'Unauthorized action.');`
+    
+## Utilització del Middleware
+  
+Laravel permet la utilització de Middleware de **tres formes diferents**:
+  * global
+  * associat a rutes o grups de rutes
+  * associat a un controlador o un mètode d'un controlador
+
+En els tres casos serà necessari registrar primer el Middleware a la classe `app/Http/Kernel.php`.
