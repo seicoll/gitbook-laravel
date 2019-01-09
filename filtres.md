@@ -97,3 +97,30 @@ Laravel permet la utilització de Middleware de **tres formes diferents**:
   * associat a un controlador o un mètode d'un controlador
 
 En els tres casos serà necessari registrar primer el Middleware a la classe `app/Http/Kernel.php`.
+
+### Middleware global
+
+Per fer que un Middleware s'executi amb **totes les peticions HTTP** realitzades a una aplicació simplement l'hem de registrar a l'array `$middleware` definit en la classe `app/Http/Kernel.php`. 
+
+Per exemple:
+
+```php
+protected $middleware = [
+    \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
+    \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
+    \App\Http\Middleware\TrimStrings::class,
+    \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+    \App\Http\Middleware\TrustProxies::class,
+    \App\Http\Middleware\MyMiddleware::class,
+];
+```
+
+En aquest exemple hem registrat la classe `MyMiddleware` al final de l'array. Si volem que el nostre middleware s'executi abans que un altre filtre simplement haurem de col·locar-abans en la posició de l'array.
+
+### Middleware associat a rutes
+
+En el cas de voler que el nostre middleware **s'executi només quan es cridi a una ruta o un grup de rutes** també haurem de registrar-lo en el fitxer `app/Http/Kernel.php`, però a l'array `$routeMiddleware`. 
+
+A l'afegir-lo a aquest array a més haurem de assignar-li un nom o clau, que serà el que després utilitzarem associar amb una ruta.
+
+En primer lloc afegim el nostre filtre a l'array i li assignem el nom "es_major_de_edad":
