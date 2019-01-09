@@ -155,7 +155,7 @@ Per associar un filtre amb una ruta que utilitza un **mètode d'un controlador**
 Route::get('profile', 'UserController@showProfile')->middleware('auth');
 ```
 
-Si volem associar diversos middlewares amb una ruta simplement hem d'afegir un array amb les claus dels middlewares. Els filtres s'executaran en l'ordre indicat en aquest array:
+Si volem **associar diversos middlewares amb una ruta** simplement hem d'afegir un array amb les claus dels middlewares. Els filtres s'executaran en l'ordre indicat en aquest array:
 
 ```php
 Route::get('dashboard', function () {
@@ -166,3 +166,8 @@ Route::get('dashboard', function () {
 
 
 ### Middleware dins de controladors
+
+
+## Referències
+
+* **Llibre Lavarel 5 (Antonio Javier Gallego):** [Middleware o filtros](https://ajgallego.gitbooks.io/laravel-5/content/capitulo_2_filtros.html)
