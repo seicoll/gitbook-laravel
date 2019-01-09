@@ -30,3 +30,61 @@ Per crear un nou middleware podem utilitzar la comanda de Artisan:
 
 `php artisan make:middelware MyMiddleware`
 
+Aquesta comanda crearà la classe `MyMiddleware` dins de la carpeta `app/Http/Middleware` amb el següent contingut per defecte:
+
+```php
+<?php
+
+namespace App\Http\Middleware;
+
+use Closure;
+
+class MyMiddleware
+{
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure  $next
+     * @return mixed
+     */
+    public function handle($request, Closure $next)
+    {
+        return $next($request);
+    }
+}
+```
+
+El codi generat per Artisan ja ve preparat perquè puguem escriure directament la implementació del filtre a realitzar dins de la funció `handle`. 
+
+Com podem veure, aquesta funció només inclou el valor de retorn amb una crida a `return $next($request);`, que el que fa és continuar amb la petició i executar el mètode que ha de processar-la. 
+
+Com entrada la funció `handle`rep dos paràmetres:
+  * `$request`: En la qual ens vénen tots els paràmetres d'entrada de la petició.
+  * `$next:` El mètode o funció que ha de processar la petició.
+
+Per exemple podríem crear un filtre que redirigeixi a l'home si l'usuari té menys de 18 anys i en un altre cas que li permeti accedir a la ruta:
+
+```php
+public function handle($request, Closure $next)
+{
+    if ($request->input('age') < 18) {
+        return redirect('home');
+    }
+
+    return $next($request);
+}
+```
+
+Com hem dit abans, **podem fer tres coses amb una petició**:
+  * Si tot és correcte permetre que la petició continuï retornant: 
+    
+    `return $next($request);`
+
+  * Realitzar una redirecció a una altra ruta per no permetre l'accés: 
+    
+    `return redirect('home');`
+
+  * Llançar una excepció o cridar al mètode `abort` per a mostrar una pàgina d'error:
+    
+    `abort(403, 'Unauthorized action.');`
