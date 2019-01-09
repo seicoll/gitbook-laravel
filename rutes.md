@@ -43,7 +43,8 @@ Route::get('/', function () {
   * Retorna una vista anomenada _welcome_.
 
 
-* També indiquen el **mètode HTTP** amb el qual s'ha de fer aquesta petició, en aquest cas GET. Els dos mètodes més utilitzats són les peticions tipus GET i tipus POST.
+* També indiquen el **mètode HTTP** amb el qual s'ha de fer aquesta petició, en aquest cas GET. 
+  * Els dos mètodes més utilitzats són les peticions tipus GET i tipus POST.
   * És important indicar que si es realitza una petició tipus POST o d'un altre tipus que no sigui GET a aquesta direcció es retornaria un error ja que aquesta ruta no està definida.
 
 
@@ -63,9 +64,9 @@ Ens mostrarà una taula amb el mètode, la direcció, l'acció i els filtres def
 
 ![](/assets/laravel-route-list.png)
 
-## Rutes amb paràmetres
+## Rutes amb paràmetres obligatoris
 
-Si volem afegir paràmetres a una ruta simplement els hem d'indicar entre claus {} a continuació de la ruta:
+Si volem afegir paràmetres a una ruta, simplement els hem d'indicar entre claus {} a continuació de la ruta:
 
 ```php
 <?php
@@ -75,7 +76,11 @@ Si volem afegir paràmetres a una ruta simplement els hem d'indicar entre claus 
 ?>
 ```
 
-* En el cas anterior el paràmetre és obligatori per tant si no s'especifica cap `nom` es produiria un error.
+* En el cas anterior el paràmetre és obligatori per tant si no s'especifica cap `nom` es produiria un error. 
+
+* Per exemple, una ruta possible seria:
+
+  `http://DOMINI/inici/sergi`
 
 També es poden enviar varis paràmetres:
 
