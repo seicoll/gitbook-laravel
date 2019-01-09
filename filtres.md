@@ -127,9 +127,12 @@ En primer lloc afegim el nostre filtre a l'array i li assignem el nom "es_major_
 
 ```php
 protected $routeMiddleware = [
-    'auth' => \App\Http\Middleware\Authenticate::class,
+    'auth' => \Illuminate\Auth\Middleware\Authenticate::class,
     'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
+    'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
+    'can' => \Illuminate\Auth\Middleware\Authorize::class,
     'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
+    'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
     'es_major_d_edad' => \App\Http\Middleware\MyMiddleware::class,
 ];
 ```
@@ -137,41 +140,29 @@ protected $routeMiddleware = [
 Un cop registrat nostre middleware ja el podem utilitzar **en el fitxer de rutes** `app/Http/routes.php` mitjançant la clau o nom assignat, per exemple:
 
 ```php
-Route::get('dashboard', ['middleware' => 'es_major_d_edad', function () {
+Route::get('dashboard', function () {
     //...
-}]);
+})->middleware('es_major_d_edad');
 ```
 
-* En l'exemple anterior hem assignat el middleware amb clau **_es_major_d_edad_** la ruta __dashboard__. 
-* Com es pot veure s'utilitza un array com a segon paràmetre, en el qual indiquem el middleware i l'acció. 
+* En l'exemple anterior hem assignat el middleware amb clau **_es_major_d_edad_** la ruta ___dashboard___. 
+* Com es pot veure s'utilitza el mètode `middleware()`, en el qual indiquem el middleware a aplicar. 
 * Si la petició supera el filtre llavors s'executarà la funció associada.
 
-Per associar un filtre amb una ruta que utilitza un mètode d'un controlador es realitzaria de la mateixa manera però indicant l'acció mitjançant la clau `"uses"`:
+Per associar un filtre amb una ruta que utilitza un **mètode d'un controlador** es realitzaria de la mateixa manera:
 
 ```php
-Route::get('profile', [
-    'middleware' => 'auth',
-    'uses' => 'UserController@showProfile'
-]);
-```
-
-Si volem associar diversos middlewares amb una ruta simplement hem d'afegir un array amb les claus. Els filtres s'executaran en l'ordre indicat en aquest array:
-
-```php
-Route::get('dashboard', ['middleware' => ['auth', 'es_mayor_de_edad'], function () {
-    //...
-}]);
-```
-
-Laravel també permet associar els filtres amb les rutes usant el mètode `middleware()`sobre la definició de la ruta de la forma:
-
-```php
-Route::get('/', function () {
-    // ...
-})->middleware(['first', 'second']);
-
-// O sobre un controlador: 
 Route::get('profile', 'UserController@showProfile')->middleware('auth');
 ```
+
+Si volem associar diversos middlewares amb una ruta simplement hem d'afegir un array amb les claus dels middlewares. Els filtres s'executaran en l'ordre indicat en aquest array:
+
+```php
+Route::get('dashboard', function () {
+    //...
+})->middleware(['auth', 'es_mayor_de_edad']);
+```
+
+
 
 ### Middleware dins de controladors
