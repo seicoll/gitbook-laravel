@@ -10,9 +10,13 @@ Això ens permetrà separar millor el codi i crear classes (controladors) que ag
 
 * Per exemple, podem crear un controlador per gestionar tota la lògica associada al control d'usuaris o qualsevol altre tipus de recurs.
 
-En Laravel, els **controladors** es guarden a la carpeta `app/Http/Controllers`. I aquí es poden organitzar en subcarpetes.
+## Controlador bàsic
 
-Codi d'un controlador bàsic:
+En Laravel, els **controladors** es guarden en fitxers PHP a la carpeta `app/Http/Controllers`. I aquí es poden organitzar en subcarpetes.
+
+Normalment se'ls afegeix el **sufix _Controller_**, per exemple `UserController.php`o `MoviesController.php`.
+
+Codi d'un **controlador bàsic**:
 
 ```php
 <?php
@@ -49,9 +53,9 @@ Indicarem el nom del controlador i l'acció (mètode) que s'ha d'executar.
 
 Crear controladors és una tasca repetitiva en Laravel, per això existeix una comanda Artisan per **crear-los automàticament**.
 
-`php artisan make:controller CategoriesController`
+`php artisan make:controller ArticulosController`
 
-Aquesta comanda crearà el controlador `CategoriesController` dins de la carpeta `app/Http/Controllers` i el completarà amb el codi bàsic que hem vist abans.
+Aquesta comanda crearà el controlador `ArticulosController` dins de la carpeta `app/Http/Controllers` i el completarà amb el codi bàsic que hem vist abans.
 
 ## Referències
 
