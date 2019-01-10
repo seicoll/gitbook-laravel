@@ -41,3 +41,7 @@ Crear controladors és una tasca repetitiva en Laravel, per això existeix una c
 artisan per crear-los automàticament.
 
 `php artisan make:controller CategoriasController`
+
+## Referències
+
+* **Llibre Lavarel 5 (Antonio Javier Gallego):** [Controladores](https://ajgallego.gitbooks.io/laravel-5/content/capitulo_2_controladores.html)
