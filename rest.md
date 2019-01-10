@@ -17,6 +17,19 @@ Segons els estàndards de HTTP, els mètodes s'han d'utilitzar per:
 * **PATCH**: modifica un recurs. Modificar parts del recurs.
 * **DELETE**: esborra un recurs
 
+## Exemple API
+
+
+|  Mètode    |         Ruta      | Acció      | Controlador/Mètode|    |
+|------------|:-----------------:|:-----------:|:-----:|:-----:|
+| GET        | user              | index  | UserController@index    |Formulari creació                 |
+| GET        | user/create       | create | UserController@create    | |
+| POST       | user               | store| UserController@store| |
+| GET        | user/{id}        | show| UserController@show| |
+| GET        | user/{id}/edit   | edit| UserController@edit| |
+| PUT/PATCH  | user/{id}   | update| UserController@update| |
+| DELETE     | user/{id}   | destroy| UserController@destroy| |
+
 ## Referències
 
 * https://otroespacioblog.wordpress.com/2013/05/22/conoce-un-poco-sobre-los-metodos-http-en-rest/
