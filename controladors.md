@@ -1,5 +1,15 @@
 # Controladors
 
+## Introducció
+
+> Recordem, que els **controladors** són els que han de contenir tota la lògica associada al processament d'una petició, encarregant-se de realitzar les consultes necessàries a la base de dades, de preparar les dades i de cridar a la vista corresponent amb aquestes dades.
+
+En general, la forma recomanable de treballar serà **associar les rutes a un mètode d'un controlador**. 
+
+Això ens permetrà separar millor el codi i crear classes (controladors) que agrupen tota la funcionalitat d'un determinat recurs. 
+
+* Per exemple, podem crear un controlador per gestionar tota la lògica associada al control d'usuaris o qualsevol altre tipus de recurs.
+
 En Laravel, els **controladors** es guarden a la carpeta `app/Http/Controllers`. I aquí es poden organitzar en subcarpetes.
 
 Codi d'un controlador bàsic:
@@ -35,12 +45,13 @@ Indicarem el nom del controlador i l'acció (mètode) que s'ha d'executar.
 
 * En aquest exemple, la ruta té un paràmetre que serà passat al mètode `ver()` del `ArticulosController`.
 
-## Generar controladors automàticament amb Artisan
+## Crear nous controladors automàticament
 
-Crear controladors és una tasca repetitiva en Laravel, per això existeix una comanda
-artisan per crear-los automàticament.
+Crear controladors és una tasca repetitiva en Laravel, per això existeix una comanda Artisan per **crear-los automàticament**.
 
-`php artisan make:controller CategoriasController`
+`php artisan make:controller CategoriesController`
+
+Aquesta comanda crearà el controlador `CategoriesController` dins de la carpeta `app/Http/Controllers` i el completarà amb el codi bàsic que hem vist abans.
 
 ## Referències
 
