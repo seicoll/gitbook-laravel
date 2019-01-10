@@ -1,4 +1,4 @@
-<!- notoc -->
+<!-- notoc -->
 
 # Base de dades
 
