@@ -21,7 +21,7 @@ Segons els estàndards de HTTP, els mètodes s'han d'utilitzar per:
 
 
 |  Mètode    |      Ruta      | Acció    | Controlador/Mètode    | Vista o acció   |
-|------------|:--------------:|:--------:|:---------------------:|:-------:|
+|------------|----------------|----------|-----------------------|---------|
 | GET        | user           | index    | UserController@index  | Llista de tots els usuaris|
 | GET        | user/create    | create   | UserController@create | Formulari creació |
 | POST       | user           | store    | UserController@store  | Processa les dades del formulari d'alta |
