@@ -20,15 +20,15 @@ Segons els estàndards de HTTP, els mètodes s'han d'utilitzar per:
 ## Exemple API
 
 
-|  Mètode    |         Ruta      | Acció      | Controlador/Mètode|    |
-|------------|:-----------------:|:-----------:|:-----:|:-----:|
-| GET        | user              | index  | UserController@index    |Formulari creació                 |
-| GET        | user/create       | create | UserController@create    | |
-| POST       | user               | store| UserController@store| |
-| GET        | user/{id}        | show| UserController@show| |
-| GET        | user/{id}/edit   | edit| UserController@edit| |
-| PUT/PATCH  | user/{id}   | update| UserController@update| |
-| DELETE     | user/{id}   | destroy| UserController@destroy| |
+|  Mètode    |      Ruta      | Acció    | Controlador/Mètode| Vista o acció   |
+|------------|:--------------:|:--------:|:-----------------:|:-------:|
+| GET        | user           | index    | UserController@index  | Llista de tots els usuaris|
+| GET        | user/create    | create   | UserController@create | Formulari creació |
+| POST       | user           | store    | UserController@store  | Processa les dades del formulari d'alta |
+| GET        | user/{id}      | show     | UserController@show   | Mostra les dades de l'usuari que té el id indicat|
+| GET        | user/{id}/edit | edit     | UserController@edit   | Formulari d'edició|
+| PUT/PATCH  | user/{id}      | update   | UserController@update | |
+| DELETE     | user/{id}      | destroy  | UserController@destroy| Elimina l'usuari que té el id indicat|
 
 ## Referències
 
