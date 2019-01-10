@@ -197,6 +197,18 @@ class UserController extends Controller
 }
 ```
 
+## Veure els filtres assignats
+
+Per assegurar-nos que totes les rutes definides són correctes i que les parts privades realment estan protegides, Laravel inclou el següent mètode de Artisan:
+
+`php artisan route:list`
+
+Aquest mètode mostra una **taula amb totes les rutes, mètodes i accions**.
+
+![](/assets/laravel-route-list-middleware.PNG)
+  
+
+  * Per a cada ruta indica els **filtres associats**, tant si estan definits des del fitxer de rutes com des de dins d'un controlador. 
 
 ## Referències
 
