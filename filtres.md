@@ -167,6 +167,36 @@ Route::get('dashboard', function () {
 
 ### Middleware dins de controladors
 
+També és possible indicar el middleware a utilitzar **des de dins d'un controlador**. 
+
+En aquest cas els filtres també hauran d'estar registrats en l'array `$routeMiddleware` del fitxer `app/Http/Kernel.php`. 
+
+Per utilitzar-los es recomana **realitzar l'assignació en el constructor del controlador** i assignar els filtres utilitzant la seva clau mitjançant el mètode `middleware()`. 
+
+Podrem indicar que es filtrin tots els mètodes, només alguns, o tots excepte els indicats, per exemple:
+
+```php
+class UserController extends Controller
+{
+    /**
+     * Instantiate a new UserController instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        // Filtrar tots els mètodes
+        $this->middleware('auth');
+
+        // Filtrar només aquests mètodes...
+        $this->middleware('log', ['only' => ['fooAction', 'barAction']]);
+
+        // Filtrar tots els mètodes excepte...
+        $this->middleware('subscribed', ['except' => ['fooAction', 'barAction']]);
+    }
+}
+```
+
 
 ## Referències
 
