@@ -20,7 +20,7 @@ Segons els estàndards de HTTP, els mètodes s'han d'utilitzar per:
 ## Exemple API
 
 
-|  Mètode    |      Ruta      | Acció    | Controlador/Mètode    | Vista o acció   |
+|  Mètode    |      Ruta      | Acció    | Controlador/Mètode    | Descripció |
 |------------|----------------|----------|-----------------------|---------|
 | GET        | user           | index    | UserController@index  | Llista de tots els usuaris|
 | GET        | user/create    | create   | UserController@create | Formulari creació |
