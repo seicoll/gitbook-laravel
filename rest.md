@@ -30,6 +30,17 @@ Segons els estàndards de HTTP, els mètodes s'han d'utilitzar per:
 | **PUT**/PATCH | user/{id}      | update   | UserController@update | Processa les dades del formulari d'edició|
 | DELETE     | user/{id}      | destroy  | UserController@destroy| Elimina l'usuari que té el id indicat|
 
+## Rutes de recursos
+
+`Route::resource('user', 'UserController');`
+
+Podem crear una classe **controlador d'un recurs** amb tots els mètodes necessàris:
+
+ `php artisan make:controller --resource UserController`
+ 
+
 ## Referències
+
+* * **Llibre Lavarel 5 (Antonio Javier Gallego):** [Controladores de recursos RESTful](https://ajgallego.gitbooks.io/laravel-5/content/capitulo_5_rest.html)
 
 * https://otroespacioblog.wordpress.com/2013/05/22/conoce-un-poco-sobre-los-metodos-http-en-rest/
