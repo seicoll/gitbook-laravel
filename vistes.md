@@ -52,9 +52,13 @@ Aquesta funció rep com a **paràmetres**:
 * Com a segon paràmetre rep una matriu de **_dades que se li passaran a la vista_**. 
   * En aquest cas la vista rebrà una variable anomenada `$nom` amb valor "Javi".
 
-En l'exemple, per carregar la vista emmagatzemada en el fitxer home.phpla referenciem mitjançant el nom home, sense la ruta resources/views.
+En l'exemple, per carregar la vista emmagatzemada en el fitxer `home.php` la referenciem mitjançant el nom `home`, **sense la ruta** `resources/views`.
 
-Les vistes es poden organitzar en sub-carpetes dins de la carpeta resources/views, per exemple podríem tenir una carpeta resources/views/user i dins d'aquesta totes les vistes relacionades, com per exemple `login.php`, `register.php` o `profile.php`. En aquest cas per referenciar les vistes que estan dins de sub-carpetes hem d'utilitzar la notació tipus _"dot"_, en què les barres que separen les carpetes es substitueixen per punts. 
+Les **vistes es poden organitzar en subcarpetes** dins de la carpeta `resources/views`.
+
+Per exemple podríem tenir una carpeta `resources/views/user` i dins d'aquesta totes les vistes relacionades, com per exemple `login.php`, `register.php` o `profile.php`. 
+
+Per **referenciar les vistes que estan dins de subcarpetes** hem d'utilitzar la notació tipus _"dot"_, en què les barres que separen les carpetes es substitueixen per punts. 
 
 Per exemple, per fer referència a la vista `resources/views/user/login.php`faríem servir el nom `user.login`, o la vista `resources/views/user/register.php` la carregaríem de la forma:
 
