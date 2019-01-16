@@ -18,7 +18,7 @@
   * [Seeders](seeders.md)
   * [Models](models.md)
 * Capítol 4: Control d'usuaris
-* Capítol 5: Rest
+* [Capítol 5: Rest](capitol-5-rest.md)
   * [REST](rest.md)
 * [Paquets addicionals](paquets.md)
 

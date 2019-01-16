@@ -34,6 +34,10 @@ Segons els estàndards de HTTP, els mètodes s'han d'utilitzar per:
 
 `Route::resource('user', 'UserController');`
 
+o bé
+
+`Route::apiResource('user', 'UserController');`
+
 Podem crear una classe **controlador d'un recurs** amb tots els mètodes necessàris:
 
  `php artisan make:controller --resource UserController`
