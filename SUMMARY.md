@@ -7,7 +7,7 @@
 * [Artisan](artisan.md)
 * [Rutes](rutes.md)
 * [Vistes](vistes.md)
-* [Plantilles Blade](blade.md)
+* [\*Plantilles Blade](blade.md)
 * [Controladors](controladors.md)
 * [Middleware o filtres](filtres.md)
 * [Base de dades](base-de-dades.md)

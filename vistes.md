@@ -98,13 +98,6 @@ $view = view('user.profile')
 
 ```
 
-
-
-
-`asset()` construirà la URL completa:
-
-`<link rel="stylesheet" href="{{ asset('css/app.css')}}`
-
 ## Referències
 
 * **Llibre Lavarel 5 (Antonio Javier Gallego):** [Vistas](https://ajgallego.gitbooks.io/laravel-5/content/capitulo_1_vistas.html)
