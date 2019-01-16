@@ -71,19 +71,25 @@ Route::get('register', function()
 
 ## Passar dades a una vista
 
-Com hem vist, per passar dades a una vista hem d'utilitzar el segon paràmetre del mètode view, el qual accepta un array associatiu. En aquest array podem afegir totes les variables que vulguem utilitzar dins de la vista, ja siguin de tipus variable normal (cadena, sencer, etc.) o un altre array o objecte amb més dades. Per exemple, per enviar a la vista profiletotes les dades de l'usuari el idrebem a través de la ruta hauríem de fer:
+Per **passar dades a una vista** hem d'utilitzar el segon paràmetre del mètode `view`, el qual accepta un array associatiu. 
+
+En aquest array podem afegir totes les variables que vulguem utilitzar dins de la vista, ja siguin de tipus variable normal (cadena, sencer, etc.) o un altre array o objecte amb més dades. 
+
+Per exemple, per enviar a la vista `profile` totes les dades de l'usuari el qual té el `id` rebem a través de la ruta hauríem de fer:
 
 ```php
 Route::get('user/profile/{id}', function($id)
 {
-    $user = // Cargar los datos del usuario a partir de $id
+    $user = // Carregar les ades de l'usuari a partir de $id
     return view('user.profile', array('user' => $user));
 });
 ```
 
-Laravel més ofereix una alternativa que crea un notació una mica més clara. En lloc de passar un array com a segon paràmetre podem utilitzar el mètode withper indicar una a una les variables o continguts que volem enviar a la vista:
+Laravel més ofereix una alternativa que crea **un notació una mica més clara**. 
 
-```
+En lloc de passar un array com a segon paràmetre podem utilitzar **el mètode `with`** per indicar una a una les variables o continguts que volem enviar a la vista:
+
+```php
 $view = view('home')->with('nombre', 'Javi');
 
 $view = view('user.profile')
@@ -98,3 +104,8 @@ $view = view('user.profile')
 `asset()` construirà la URL completa:
 
 `<link rel="stylesheet" href="{{ asset('css/app.css')}}`
+
+## Referències
+
+* **Llibre Lavarel 5 (Antonio Javier Gallego):** [Vistas](https://ajgallego.gitbooks.io/laravel-5/content/capitulo_1_vistas.html)
+
