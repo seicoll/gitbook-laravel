@@ -128,7 +128,7 @@ Posteriorment, en una altra plantilla o vista, podem indicar que extengui el lay
 
 Com es pot veure, les vistes que extenem un layout simplement han de sobreescriure les seccions del layout. 
 
-* La directiva `\@section` permet anar afegint contingut en les plantilles filles
+* La directiva `@section` permet anar afegint contingut en les plantilles filles
 * Mentre que `@yield` serà substituït pel contingut que s'indiqui. 
 * El mètode `@parent`càrrega en la posició indicada el contingut definit pel pare per a aquesta secció.
 
