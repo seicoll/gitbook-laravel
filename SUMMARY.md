@@ -12,11 +12,14 @@
 * [Capítol 2:]()
   * [Controladors](controladors.md)
   * [Middleware o filtres](filtres.md)
-  * \*Formularis
+  * [\*Formularis](forms.md)
 * [Capítol 3: Base de dades](base-de-dades.md)
   * [Migracions](migracions.md)
   * [Seeders](seeders.md)
   * [Models](models.md)
-* [REST](rest.md)
+* [Capítol 4: Control d'usuaris]()
+
+* [Capítol 5: Rest]()
+  * [REST](rest.md)
 * [Paquets addicionals](paquets.md)
 
