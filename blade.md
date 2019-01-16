@@ -15,7 +15,7 @@ Els fitxers de vistes que utilitzen el sistema de plantilles Blade han de tenir 
 
 ## Mostrar dades
 
-El mètode més bàsic que tenim a Blade és el de mostrar dades, per això utilitzarem les claus dobles ({{}}) i dins d'elles escriurem la variable o funció amb el contingut a mostrar:
+El mètode més bàsic que tenim a Blade és el de mostrar dades, per això utilitzarem les claus dobles (\{\{\}\}) i dins d'elles escriurem la variable o funció amb el contingut a mostrar:
 
 ```
 Hola {{ $name }}.
