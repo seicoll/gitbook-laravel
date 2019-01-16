@@ -8,7 +8,7 @@
   * [Artisan](artisan.md)
   * [Rutes](rutes.md)
   * [Vistes](vistes.md)
-  * [\*Plantilles Blade](blade.md)
+  * [Plantilles Blade](blade.md)
 * Capítol 2:
   * [Controladors](controladors.md)
   * [Middleware o filtres](filtres.md)
