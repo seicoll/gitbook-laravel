@@ -22,21 +22,21 @@ Segons els estàndards de HTTP, els mètodes s'han d'utilitzar per:
 
 |  Mètode    |      Ruta      | Acció    | Controlador/Mètode    | Descripció |
 |------------|----------------|----------|-----------------------|---------|
-| GET        | user           | index    | UserController@index  | Llista de tots els usuaris|
-| GET        | user/create    | create   | UserController@create | Formulari creació |
-| POST       | user           | store    | UserController@store  | Processa les dades del formulari d'alta |
-| GET        | user/{id}      | show     | UserController@show   | Mostra les dades de l'usuari que té el id indicat|
-| GET        | user/{id}/edit | edit     | UserController@edit   | Formulari d'edició|
-| **PUT**/PATCH | user/{id}      | update   | UserController@update | Processa les dades del formulari d'edició|
-| DELETE     | user/{id}      | destroy  | UserController@destroy| Elimina l'usuari que té el id indicat|
+| GET        | users           | index    | UserController@index  | Llista de tots els usuaris|
+| GET        | users/create    | create   | UserController@create | Formulari creació |
+| POST       | users           | store    | UserController@store  | Processa les dades del formulari d'alta |
+| GET        | users/{id}      | show     | UserController@show   | Mostra les dades de l'usuari que té el id indicat|
+| GET        | users/{id}/edit | edit     | UserController@edit   | Formulari d'edició|
+| **PUT**/PATCH | users/{id}      | update   | UserController@update | Processa les dades del formulari d'edició|
+| DELETE     | users/{id}      | destroy  | UserController@destroy| Elimina l'usuari que té el id indicat|
 
 ## Rutes de recursos
 
-`Route::resource('user', 'UserController');`
+`Route::resource('users', 'UserController');`
 
 o bé
 
-`Route::apiResource('user', 'UserController');`
+`Route::apiResource('users', 'UserController');` per no crear les rutes `create` i `edit` en el cas d'una API REST.
 
 Podem crear una classe **controlador d'un recurs** amb tots els mètodes necessàris:
 
