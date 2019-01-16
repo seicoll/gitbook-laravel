@@ -14,6 +14,7 @@ Contindran el codi HTML del nostre lloc web, barrejat amb els assets (CSS, imatg
 
 A continuació s'inclou un exemple d'una vista simple que simplement mostrarà per pantalla `¡Hola <nom>!`, on `<nom>` és una variable de PHP que la vista ha de rebre com a entrada per poder mostrar-la.
 
+**resources/views/home.php**
 ```html
 <html>
     <head>
@@ -27,8 +28,65 @@ A continuació s'inclou un exemple d'una vista simple que simplement mostrarà p
 
 ## Referenciar i retornar vistes
 
+Un cop tenim una vista hem d'**associar-la a una ruta** per poder mostrar-la. 
+
+Per això hem d'anar al fitxer `routes/web.php` com hem vist abans i escriure el següent codi:
+
+```php
+Route::get('/', function()
+{
+    return view('home', array('nom' => 'Javi'));
+});
+```
 
 
+Estem definint que la vista es torni quan es faci una petició tipus GET a l'arrel del nostre lloc. 
+
+El valor retornat per la funció genera la vista usant el mètode `view()` i la retorna.  
+Aquesta funció rep com a **paràmetres**:
+
+* El **_nom de la vista_** (en aquest cas `home`), el qual serà un fitxer emmagatzemat a la carpeta `views`.
+  * Recordeu que la vista anterior d'exemple l'havíem guardat en `resources/views/home.php`. Per indicar el nom de la vista s'utilitza el mateix nom del fitxer però sense l'extensió `.php` ni la ruta `resources/view`.
+
+
+* Com a segon paràmetre rep una matriu de **_dades que se li passaran a la vista_**. 
+  * En aquest cas la vista rebrà una variable anomenada `$nom` amb valor "Javi".
+
+En l'exemple, per carregar la vista emmagatzemada en el fitxer home.phpla referenciem mitjançant el nom home, sense la ruta resources/views.
+
+Les vistes es poden organitzar en sub-carpetes dins de la carpeta resources/views, per exemple podríem tenir una carpeta resources/views/user i dins d'aquesta totes les vistes relacionades, com per exemple `login.php`, `register.php` o `profile.php`. En aquest cas per referenciar les vistes que estan dins de sub-carpetes hem d'utilitzar la notació tipus _"dot"_, en què les barres que separen les carpetes es substitueixen per punts. 
+
+Per exemple, per fer referència a la vista `resources/views/user/login.php`faríem servir el nom `user.login`, o la vista `resources/views/user/register.php` la carregaríem de la forma:
+
+```php
+Route::get('register', function()
+{
+    return view('user.register');
+});
+```
+
+## Passar dades a una vista
+
+Com hem vist, per passar dades a una vista hem d'utilitzar el segon paràmetre del mètode view, el qual accepta un array associatiu. En aquest array podem afegir totes les variables que vulguem utilitzar dins de la vista, ja siguin de tipus variable normal (cadena, sencer, etc.) o un altre array o objecte amb més dades. Per exemple, per enviar a la vista profiletotes les dades de l'usuari el idrebem a través de la ruta hauríem de fer:
+
+```php
+Route::get('user/profile/{id}', function($id)
+{
+    $user = // Cargar los datos del usuario a partir de $id
+    return view('user.profile', array('user' => $user));
+});
+```
+
+Laravel més ofereix una alternativa que crea un notació una mica més clara. En lloc de passar un array com a segon paràmetre podem utilitzar el mètode withper indicar una a una les variables o continguts que volem enviar a la vista:
+
+```
+$view = view('home')->with('nombre', 'Javi');
+
+$view = view('user.profile')
+            ->with('user', $user)
+            ->with('editable', false);
+
+```
 
 
 
