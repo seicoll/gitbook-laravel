@@ -137,10 +137,13 @@ El mètode `@yield` també permet establir un contingut per defecte mitjançant 
 `@yield('section', 'Contenido por defecto')`
 
 
----
-`asset()` construirà la URL completa:
+## Incloure assets d'una plantilla
 
-`<link rel="stylesheet" href="{{ asset('css/app.css')}}`
+Per incloure imatges o altres arxius que tenim a la carpeta `public` dins d'una plantilla cal utilitzar la funció `asset()`.
+
+La funció `asset()` genera la URL completa d'una asset:
+
+`<link href="{{ asset('css/app.css')}} rel="stylesheet" `
 
 
 ## Referències
