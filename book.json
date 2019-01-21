@@ -3,7 +3,6 @@
     "author": "Sergi Coll",
     "language": "ca",
     "plugins": [
-        "etoc",
         "-highlight",
         "sunlight-highlighter",
         "back-to-top-button",
