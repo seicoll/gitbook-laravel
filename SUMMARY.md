@@ -17,7 +17,7 @@
   * [Migracions](migracions.md)
   * [Seeders](seeders.md)
   * [Models](models.md)
-* Capítol 4: Control d'usuaris
+* [Capítol 4: Control d'usuaris](capitol-4-control-dusuaris.md)
 * [Capítol 5: Rest](capitol-5-rest.md)
   * [REST](rest.md)
 * [Paquets addicionals](paquets.md)
