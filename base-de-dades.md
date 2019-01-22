@@ -1,6 +1,12 @@
 <!-- notoc -->
 
-# Base de dades
+# Capítol 3: Base de dades
+
+## Índex
+
+1. [Migracions](migracions.md)
+* [Seeders](seeders.md)
+* [Models](models.md)
 
 ## Configuració de la base de dades
 
