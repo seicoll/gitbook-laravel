@@ -20,7 +20,7 @@ Per a crear una nova migració s'utilitza la comanda de Artisan `make:migration`
 
 `php artisan make:migration create_categories_table --create=categories` 
 
-`--create=categories` indica el nom de la taula a la base de dades
+`--create=categories` indica el nom de la taula a la base de dades.
 
 Això ens crearà un fitxer de migració a la carpeta `database/migrations` amb el nom `<TIMESTAMP>_create_categories_table.php`. 
 
@@ -133,27 +133,28 @@ https://ajgallego.gitbooks.io/laravel-5/content/base_de_datos_schema_builder.htm
 
 Després de crear una migració i de definir els camps de la taula hem de **llançar la migració** amb la següent comanda:
 
-`php artisan migrate`
+  `php artisan migrate`
 
 Aquesta comanda s'aplicarà la migració sobre la base de dades. Si hi hagués més d'una migració pendent, s'executaran totes. Per a cada migració es cridarà al seu mètode `up` perquè creï o modifiqui la base de dades. 
 
 Posteriorment en cas que vulguem **desfer els canvis** podrem executar:
 
-`php artisan migrate:rollback`
+  `php artisan migrate:rollback`
 
  O si volem **desfer totes les migracions**:
  
-`php artisan migrate:reset`
+  `php artisan migrate:reset`
 
 Una comanda interessant quan estem desenvolupant un nou lloc web és `migrate:refresh`, que **desfarà tots els canvis i tornar a aplicar les migracions**:
 
-`php artisan migrate:refresh`
+  `php artisan migrate:refresh`
 
 A més si volem **comprovar l'estat de les migracions**, per veure les que ja estan realitzades i les que queden pendents, podem executar:
 
-`php artisan migrate:status`
+  `php artisan migrate:status`
 
 
 ## Referències
 
-[https://ajgallego.gitbooks.io/laravel-5/content/base_de_datos_migraciones.html](https://ajgallego.gitbooks.io/laravel-5/content/base_de_datos_migraciones.html)
+* **Llibre Lavarel 5 (Antonio Javier Gallego):** 
+[Migraciones](https://ajgallego.gitbooks.io/laravel-5/content/base_de_datos_migraciones.html)
