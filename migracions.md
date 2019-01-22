@@ -22,7 +22,9 @@ Per a crear una nova migració s'utilitza la comanda de Artisan `make:migration`
 
 `--create=categories` indica el nom de la taula a la base de dades
 
-Això ens crearà un fitxer de migració a la carpeta `database/migrations` amb el nom <TIMESTAMP>_create_categories_table.php. En afegir un _timestamp_ a les migracions el sistema sap l'ordre en el què ha d'executar-les (o desfer-les).
+Això ens crearà un fitxer de migració a la carpeta `database/migrations` amb el nom `<TIMESTAMP>_create_categories_table.php`. 
+
+Al afegir un _**timestamp**_ a les migracions, el sistema sap l'ordre en el què ha d'executar-les (o desfer-les).
 
 
 ## Estructura d'una migració
