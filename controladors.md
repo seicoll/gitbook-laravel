@@ -37,9 +37,9 @@ Codi d'un **controlador bàsic**:
 
 ## Cridar un controlador des del sistema de routing
 
-Els controladors els cridarem, normalment, des del sistema de routing.
+> Els controladors els **cridarem**, normalment, des del **sistema de routing**.
 
-Indicarem el nom del controlador i l'acció (mètode) que s'ha d'executar.
+Indicarem el **nom del controlador** i l'**acció (mètode)** que s'ha d'executar.
 
 ```php
 <?php
