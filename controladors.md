@@ -24,12 +24,12 @@ Codi d'un **controlador bàsic**:
     
     use App\Http\Controllers\Controller;
     
-    class ArticulosController extends Controller
+    class ArticlesController extends Controller
     //El controlador extén la classe base Controller de Laravel
     {
-        public function ver($id)
+        public function show($id)
         {
-            return view('articulos.ver', ['id' => $id]);
+            return view('articles.show', ['id' => $id]);
         }
     }
 ?>
@@ -43,19 +43,19 @@ Indicarem el nom del controlador i l'acció (mètode) que s'ha d'executar.
 
 ```php
 <?php
-    Route::get('articulos/{id}','ArticulosController@ver');
+    Route::get('articles/{id}','ArticlesController@show');
 ?>
 ```
 
-* En aquest exemple, la ruta té un paràmetre que serà passat al mètode `ver()` del `ArticulosController`.
+* En aquest exemple, la ruta té un paràmetre que serà passat al mètode `show()` del `ArticlesController`.
 
 ## Crear nous controladors automàticament
 
 Crear controladors és una tasca repetitiva en Laravel, per això existeix una comanda Artisan per **crear-los automàticament**.
 
-`php artisan make:controller ArticulosController`
+`php artisan make:controller ArticlesController`
 
-Aquesta comanda crearà el controlador `ArticulosController` dins de la carpeta `app/Http/Controllers` i el completarà amb el codi bàsic que hem vist abans.
+Aquesta comanda crearà el controlador `ArticlesController` dins de la carpeta `app/Http/Controllers` i el completarà amb el codi bàsic que hem vist abans.
 
 ## Referències
 
