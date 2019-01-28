@@ -6,9 +6,9 @@
 
 En general, la forma recomanable de treballar serà **associar les rutes a un mètode d'un controlador**. 
 
-Això ens permetrà separar millor el codi i crear classes (controladors) que agrupen tota la funcionalitat d'un determinat recurs. 
+Això ens permetrà separar millor el codi i **crear classes (controladors)** que agrupen tota la funcionalitat d'un determinat recurs. 
 
-* Per exemple, podem crear un controlador per gestionar tota la lògica associada al control d'usuaris o qualsevol altre tipus de recurs.
+* Per exemple, podem crear un controlador per gestionar tota la lògica associada al **control d'usuaris** o qualsevol altre tipus de recurs.
 
 ## Controlador bàsic
 
