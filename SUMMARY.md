@@ -10,7 +10,7 @@
   * [Vistes](vistes.md)
   * [Plantilles Blade](blade.md)
   * [Exercicis](https://ajgallego.gitbooks.io/laravel-5/content/capitulo_1_ejercicios.html)
-* Capítol 2:
+* [Capítol 2: Controladors i filtres](capitol2.md)
   * [Controladors](controladors.md)
   * [Middleware o filtres](filtres.md)
   * [\*Formularis](forms.md)
