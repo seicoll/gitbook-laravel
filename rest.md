@@ -131,15 +131,16 @@ En les especificacions de la pròpia API s'indiquen els codis exactes de retorn 
 ## Exemple API
 
 
-|  Mètode HTTP   |      Ruta / URI     | Acció    | Controlador/Mètode    | Descripció |
+|  Mètode HTTP   |      Ruta / URI     | Operació    | Controlador/Mètode    | Descripció |
 |------------|----------------|----------|-----------------------|---------|
-| GET        | users           | index    | UserController@index  | Llista de tots els usuaris|
-| GET        | users/create    | create   | UserController@create | Formulari creació |
-| POST       | users           | store    | UserController@store  | Processa les dades del formulari d'alta |
-| GET        | users/{id}      | show     | UserController@show   | Mostra les dades de l'usuari que té el id indicat|
-| GET        | users/{id}/edit | edit     | UserController@edit   | Formulari d'edició|
-| **PUT**/PATCH | users/{id}      | update   | UserController@update | Processa les dades del formulari d'edició|
-| DELETE     | users/{id}      | destroy  | UserController@destroy| Elimina l'usuari que té el id indicat|
+| GET        | users           | index    | UserController@index  | Obtenir la llista de tots els usuaris|
+| GET        | users/{id}      | show     | UserController@show   | Obtenir les dades de l'usuari que té el id indicat|
+| GET        | users/create    | create   | UserController@create | Obtenir el formulari de creació |
+| POST       | users           | store    | UserController@store  | Inserir l'usuari que té el id indicat|
+ |
+| GET        | users/{id}/edit | edit     | UserController@edit   | Obtenir el formulari d'edició|
+| **PUT**/PATCH | users/{id}      | update   | UserController@update | Modificar l'usuari que té el id indicat|
+| DELETE     | users/{id}      | destroy  | UserController@destroy| Eliminar l'usuari que té el id indicat|
 
 ## Rutes de recursos
 
