@@ -2,9 +2,9 @@
 
 ## Què és Laravel?
 
-> Laravel és un **framework** de codi obert pel desenvolupament d'aplicacions web amb PHP.
+> Laravel és un **framework** de codi obert pel desenvolupament d'aplicacions i serveis web amb PHP.
 
-Va ser creat l'any 2011 per Taylor Otwell inspirant-se en **Ruby on Rails** i **Symfony**.
+Va ser creat l'any 2011 per Taylor Otwell inspirant-se en **Ruby on Rails** i **ASP.Net**.
 
 **Principals característiques i avantatges:**
 * Evita la repetició de codi.
@@ -12,7 +12,7 @@ Va ser creat l'any 2011 per Taylor Otwell inspirant-se en **Ruby on Rails** i **
 * Disposa de mecanismes de seguretat (autenticació d'usuaris, etc).
 * Utilitza el patró **MVC** (Model Vista Controlador).
 * Permet la integració de llibreries.
-* Requereix coneixements de PHP i programació orientada a objectes (POO).
+* Requereix coneixements de **PHP** i programació orientada a objectes (**POO**).
 
 ![](/assets/laravel.png)
 
