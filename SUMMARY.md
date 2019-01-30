@@ -23,5 +23,7 @@
 * [Capítol 4: Control d'usuaris](capitol-4-control-dusuaris.md)
 * [Capítol 5: Rest](capitol-5-rest.md)
   * [REST](rest.md)
+  * [Seguretat en serveis REST](rest_seg.md)
 * [Paquets addicionals](paquets.md)
+
 
