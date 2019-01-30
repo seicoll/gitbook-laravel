@@ -69,6 +69,47 @@ JSON igual que XML és un llenguatge de representació de dades en mode text, pe
 </estudiants>
 ```
 
+### Sintaxi JSON
+
+La sintaxi JSON és similar a Javascript, ja que aquest model de representació en prové directament.
+
+La sintaxi JSON deriva de la sintaxi de notació JavaScript:
+
+* Les dades són parells nom/valor
+* Les dades es separen per comes
+* Els objectes estan envoltats dels símbols **{ }** 
+* Els arrays estan envoltats dels símbols **[ ]**
+
+
+**Exemple nom/valor:**
+
+`"cognom" : "Puig"`
+
+
+Els **valors** en JSON poden ser:
+
+* Un **número**
+* Una **cadena** de caràcters (entre símbols **" "** )
+* Un **booleà** (true o false)
+* Un **array** (entre els símbols **[ ]** )
+* Un **objecte** (entre símbols **{ }** )
+
+
+**Exemple objecte: **
+
+`{"nom": "David","cognom1": "Vidal","cognom2": "Soler"}`
+
+
+**Exemple array:**
+
+```
+"estudiants":[
+    {"nom":"David", "cognom1":"Vidal", "cognom2":"Soler"},
+    {"nom":"Roser", "cognom1":"Puig", "cognom2":"Ferrer"},
+    {"nom":"Pere", "cognom1":"Serra", "cognom2":"Martí"}
+]
+```
+
 ## Exemple API
 
 
