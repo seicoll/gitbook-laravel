@@ -7,8 +7,11 @@
 Va ser creat l'any 2011 per Taylor Otwell inspirant-se en **Ruby on Rails** i **Symfony**.
 
 **Principals característiques i avantatges:**
-* Utilitza el patró **MVC** (Model Vista Controlador).
+* Evita la repetició de codi.
 * S'aprèn ràpidament.
+* Disposa de mecanismes de seguretat (autenticació d'usuaris, etc).
+* Utilitza el patró **MVC** (Model Vista Controlador).
+* Permet la integració de llibreries.
 * Requereix coneixements de PHP i programació orientada a objectes (POO).
 
 ![](/assets/laravel.png)
