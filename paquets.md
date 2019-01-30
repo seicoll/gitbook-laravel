@@ -2,9 +2,9 @@
 
 
 
-* [Laravel Nova](https://nova.laravel.com/): Panell d'administració.
+* [Laravel Nova](https://nova.laravel.com/): Permet crear fàcilment un panell d'administració pel nostre site.
 
-* [Laravel Socialite](https://laravel.com/docs/5.7/socialite): Autentificació amb Facebook, Twitter, LinkedIn, Google, GitHub, GitLab i Bitbucket.
+* [Laravel Socialite](https://laravel.com/docs/5.7/socialite): Autenticació amb proveïdors OAuth (Facebook, Twitter, LinkedIn, Google, GitHub, GitLab i Bitbucket).
 
 * [Envoyer](https://envoyer.io/): Desplega una aplicació a partir d'un repositori GIT.
 
