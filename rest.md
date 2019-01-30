@@ -31,6 +31,43 @@ Segons els estàndards de HTTP, els mètodes s'han d'utilitzar en l'arquitectura
 * **DELETE**: elimina un recurs
 * **OPTIONS**: per a d'altres operacions sobre un recurs.
 
+## JSON
+
+> **JSON** (prové de l'acrònim **J**ava**S**cript **O**bject **N**otation) és un standard obert basat en text per a l'intercanvi de dades i que pot ser directament llegit per humans. 
+
+En realitat deriva del llenguatge Javascript, de la seva metodologia per representar objectes simples i llistes associatives, que n'anomena objects. 
+
+Els arxius que representen estructures en aquest format utilitzen la **extensió _.json_**
+
+El format JSON s'utilitza habitualment per serialitzar i transmetre dades estructurades en una connexió de xarxa.
+
+**Exemple en JSON:**
+
+```
+{"estudiants":[
+    {"nom":"David", "cognom1":"Vidal", "cognom2":"Soler"},
+    {"nom":"Roser", "cognom1":"Puig", "cognom2":"Ferrer"},
+    {"nom":"Pere", "cognom1":"Serra", "cognom2":"Martí"}
+]}
+```
+
+JSON igual que XML és un llenguatge de representació de dades en mode text, però amb la diferencia que JSON no conté informació sobre capçaleres i resulta **un llenguatge més lleuger**, característica molt interessant per a la seva **transmissió més efectiva per la xarxa**, entre dispositius.
+
+**Exemple en XML:**
+
+```xml
+<estudiants>
+    <estudiant>
+        <nom>David</nom> <cognom1>Vidal</cognom1> <cognom2>Soler</cognom2>
+    </estudiant>
+    <estudiant>
+        <nom>Roser</nom> <cognom1>Puig</cognom1> <cognom2>Ferrer</cognom2>
+    </estudiant>
+    <estudiant>
+        <nom>Pere</nom> <cognom1>Serra</cognom1> <cognom2>Martí</cognom2>
+    </estudiant>
+</estudiants>
+```
 
 ## Exemple API
 
