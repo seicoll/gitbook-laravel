@@ -1,10 +1,13 @@
-# Paquets
+# Paquets addicionals
+
+
 
 * [Laravel Nova](https://nova.laravel.com/): Panell d'administració.
 
 * [Laravel Socialite](https://laravel.com/docs/5.7/socialite): Autentificació amb Facebook, Twitter, LinkedIn, Google, GitHub, GitLab i Bitbucket.
 
+* [Envoyer](https://envoyer.io/): Desplega una aplicació a partir d'un repositori GIT.
 
-
+* [Lumen](https://lumen.laravel.com/): Micro-framework de Laravel per aplicacions petites o APIs.
 
 * [CRUDBooster](http://crudbooster.com/): Generador CRUD (read: Create, Read, Update, Delete).
