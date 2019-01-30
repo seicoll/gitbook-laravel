@@ -134,13 +134,13 @@ En les especificacions de la pròpia API s'indiquen els codis exactes de retorn 
 |  Mètode HTTP   |      Ruta / URI     | Operació    | Controlador/Mètode    | Descripció |
 |------------|----------------|----------|-----------------------|---------|
 | GET        | users           | index    | UserController@index  | Obtenir la llista de tots els usuaris|
-| GET        | users/{id}      | show     | UserController@show   | Obtenir les dades de l'usuari que té el id indicat|
+| GET        | users/{id}      | show     | UserController@show   | Obtenir les dades de l'usuari que té el **id** indicat|
 | GET        | users/create    | create   | UserController@create | Obtenir el formulari de creació |
-| POST       | users           | store    | UserController@store  | Inserir l'usuari que té el id indicat|
+| POST       | users     | store    | UserController@store  | Inserir l'usuari |
  |
-| GET        | users/{id}/edit | edit     | UserController@edit   | Obtenir el formulari d'edició|
-| **PUT**/PATCH | users/{id}      | update   | UserController@update | Modificar l'usuari que té el id indicat|
-| DELETE     | users/{id}      | destroy  | UserController@destroy| Eliminar l'usuari que té el id indicat|
+| GET        | users/{id}/edit | edit     | UserController@edit   | Obtenir el formulari d'edició de l'usuari que té el **id** indicat|
+| **PUT**/PATCH | users/{id}      | update   | UserController@update | Modificar l'usuari que té el **id** indicat|
+| DELETE     | users/{id}      | destroy  | UserController@destroy| Eliminar l'usuari que té el **id** indicat|
 
 ## Rutes de recursos
 
