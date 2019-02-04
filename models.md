@@ -35,3 +35,8 @@ o bé
 * `-a, --all` Genera la migració, factory i controller per aquest model.
 
 En la instal·lació inicial de Laravel ja tenim definit un Model anomenat `User` al fitxer `app/User.php`.
+
+## Referències
+
+* **Llibre Lavarel 5 (Antonio Javier Gallego):** 
+[Eloquent ORM](https://ajgallego.gitbooks.io/laravel-5/content/base_de_datos_eloquent_orm.html)
