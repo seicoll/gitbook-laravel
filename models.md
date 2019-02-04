@@ -6,11 +6,11 @@ Laravel inclou el seu propi sistema **ORM** anomenat **_Eloquent_** que ens prop
 
 > Un **ORM (Object-Relational mapping)** és un tècnica de programació per convertir dades entre un llenguatge de programació orientat a objectes i una base de dades relacional.
 
-Per cada taula de la base de dades hem de definir el seu corresponent model que s'utilitzarà per interactuar des de codi amb la taula.
+**Per cada taula de la base de dades hem de definir el seu corresponent model** que s'utilitzarà per interactuar des de codi amb la taula.
 
 En Laravel, els **models** es guarden a la carpeta `app`.
 
-Per definir un model que utilitzi **_Eloquent_** només cal crear una classe que hereti de la classe Model.
+Per definir un model que utilitzi **_Eloquent_** només cal crear una classe que hereti de la classe `Model`.
 
 ```php
 <?php
@@ -32,6 +32,6 @@ o bé
 
 `php artisan make:model Acticle -a`
 
-`-a, --all` Genera la migració, factory i controller per aquest model.
+* `-a, --all` Genera la migració, factory i controller per aquest model.
 
-* En la instal·lació inicial de Laravel ja tenim definit un Model anomenat User al fitxer `app/User.php`.
+En la instal·lació inicial de Laravel ja tenim definit un Model anomenat `User` al fitxer `app/User.php`.
