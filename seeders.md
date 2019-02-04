@@ -104,9 +104,9 @@ Una vegada que hàgiu definit el vostre factory **generem el seeder** amb la com
 
   `php artisan make:seeder PostsTableSeeder`
 
-I en el seeder podeu utilitzar la funció `factory` per inserir registres a la vostra base de dades.
+I en el seeder podeu utilitzar la funció `factory()` per inserir registres a la vostra base de dades.
 
-Per exemple, creem 300 posts:
+Per **exemple**, creem 300 posts:
 
 ```php
 <?php
