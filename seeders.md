@@ -98,9 +98,9 @@ Per a una millor organització, creem un fitxer de **factory** per a cada model 
 ```
 
 
-El  Closure anterior rebrà una instància de la biblioteca Faker de PHP, que us permetrà generar diversos tipus de dades aleatòries per a la prova.
+El  Closure anterior rebrà una instància de la biblioteca **_Faker_** de PHP, que us permetrà generar diversos tipus de dades aleatòries per a la prova.
 
-Una vegada que hàgiu definit els vostre factory generem el seeder amb la comanda:
+Una vegada que hàgiu definit el vostre factory **generem el seeder** amb la comanda:
 
   `php artisan make:seeder PostsTableSeeder`
 
