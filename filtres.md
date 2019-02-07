@@ -16,7 +16,7 @@ Ens podem imaginar els middlewares com portes per les quals ha de passar la peti
 
 Aquest middleware s'encarregarà de filtrar les peticions a aquestes rutes: 
   * en cas d'estar loguejat i tenir permisos d'accés li permetrà continuar amb la petició
-  * en cas de no estar autenticat el redireccionarà al formulari de login
+  * en cas de no estar autenticat el redireccionarà al formulari de login.
 
 Laravel inclou **altres middlewares** que podem trobar a la carpeta `app/Http/Middleware`, els quals els podem modificar o ampliar la seva funcionalitat. 
 
