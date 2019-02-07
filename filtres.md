@@ -14,13 +14,11 @@ Ens podem imaginar els middlewares com portes per les quals ha de passar la peti
 
 **Laravel** inclou diversos filtres per defecte, un d'ells és l'encarregat de realitzar l'**autenticació dels usuaris**. 
 
-Aquest middleware el podem aplicar sobre una ruta, un conjunt de rutes o sobre un controlador en concret. 
-
 Aquest middleware s'encarregarà de filtrar les peticions a aquestes rutes: 
   * en cas d'estar loguejat i tenir permisos d'accés li permetrà continuar amb la petició
   * en cas de no estar autenticat el redireccionarà al formulari de login
 
-Laravel inclou altres middleares que podem trobar a la carpeta `app/Http/Middleware`, els quals els podem modificar o ampliar la seva funcionalitat. 
+Laravel inclou **altres middlewares** que podem trobar a la carpeta `app/Http/Middleware`, els quals els podem modificar o ampliar la seva funcionalitat. 
 
 ## Definir un nou Middleware
 
@@ -90,7 +88,7 @@ Com hem dit abans, **podem fer tres coses amb una petició**:
     `abort(403, 'Unauthorized action.');`
     
 ## Utilització del Middleware
-  
+ 
 Laravel permet la utilització de Middleware de **tres formes diferents**:
   * global
   * associat a rutes o grups de rutes
