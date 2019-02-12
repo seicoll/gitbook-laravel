@@ -22,6 +22,7 @@
   * [Exercicis](https://ajgallego.gitbooks.io/laravel-5/content/base_de_datos_ejercicios.html)
 * [Capítol 4: Control d'usuaris](capitol-4-control-dusuaris.md)
   * [Middleware o filtres](filtres.md)
+  * [Dades d'entrada](dades-entrada.md)
   * [Exercicis](https://ajgallego.gitbooks.io/laravel-5/content/capitulo_4_ejercicios.html)
 * [Capítol 5: Rest](capitol-5-rest.md)
   * [REST](rest.md)
