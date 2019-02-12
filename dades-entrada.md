@@ -65,7 +65,7 @@ $input = $request->only('username', 'password');
 $input = $request->except('credit_card')
 ```
 
-Podem obtenir totes les dades d'entrada a la vegada i **assignar-los massivament a un objecte**.
+Podem obtenir totes les dades d'entrada a la vegada i **assignar-los massivament a un objecte**. Així s'assignaran automàticament cada una de les dades del formulari a les propietats de l'objecte sense haver-ho de fer una a una.
 
 ```
 public function store (Request $request)
