@@ -74,3 +74,11 @@ public function store (Request $request)
     $user->save();
 }
 ```
+
+## JSON
+
+Si l'entrada està codificada format **JSON **(per exemple quan ens comuniquem a través d'una API és bastant comú) també podrem **accedir **als diferents camps de les dades d'entrada **de forma normal** (amb els mètodes que hem vist)
+
+**Per exemple**: 
+
+`$name = $request->input('name');).`
