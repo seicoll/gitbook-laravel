@@ -26,6 +26,15 @@ class UserController extends Controller
 
 En aquest exemple com es pot veure s'ha afegit la classe `Request` com a paràmetre al mètode `store`. Laravel automàticament s'encarrega d'injectar aquestes dependències per la qual cosa directament podem usar la variable `$request` per obtenir les dades d'entrada.
 
+Si el mètode del controlador tingués **més paràmetres** simplement els haurem d'afegir a continuació de les dependències, per exemple:
+
+```
+public function edit(Request $request, $id)
+{
+    //...
+}
+```
+
 ## Obtenir els valors d'entrada
 
 Per obtenir el valor d'una variable d'entrada d'un formulari fem servir el mètode `input()` indicant el nom de la variable:
@@ -46,7 +55,7 @@ També podem especificar un **valor per defecte** com a segon paràmetre:
 O també podem obtenir **totes les dades d'entrada a la vegada** (en una matriu) o només alguns d'ells:
 
 ```
-// Obtenir tots: 
+// Obtenir tots els camps: 
 $input = $request->all();
 
 // Obtenir només els camps indicats: 
@@ -56,7 +65,7 @@ $input = $request->only('username', 'password');
 $input = $request->except('credit_card')
 ```
 
-Podem obtenir totes les dades d'entrada a la vegada i **assignar-los massivament a l'objecte**.
+Podem obtenir totes les dades d'entrada a la vegada i **assignar-los massivament a un objecte**.
 
 ```
 public function store (Request $request)
