@@ -147,13 +147,24 @@ En les especificacions de la pròpia API s'indiquen els codis exactes de retorn 
 
 ## Rutes de recursos
 
+Podem **definir totes les rutes** necessàries per un recurs utilitzant:
+
 `Route::resource('users', 'UserController');`
+
+* On 'users' és el **nom del recurs**, normalment amb plural.
+* I 'UserController' és el **nom del controlador** associat.
 
 o bé
 
-`Route::apiResource('users', 'UserController');` per no crear les rutes `create` i `edit` en el cas d'una API REST.
+`Route::apiResource('users', 'UserController');` 
 
-Podem crear una classe **controlador d'un recurs** amb tots els mètodes necessaris:
+per no crear les rutes `create` i `edit` en el cas d'una API REST.
+
+Amb la comanda `php artisan route:list` podem veure les **rutes generades**:
+
+![](/assets/API_rutes.PNG)
+
+I també podem crear la classe **controlador del recurs** amb tots els mètodes necessaris:
 
  `php artisan make:controller UserController --resource`
  
