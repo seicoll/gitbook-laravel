@@ -154,11 +154,9 @@ Podem **definir totes les rutes** necessàries per un recurs utilitzant:
 * On 'users' és el **nom del recurs**, normalment amb plural.
 * I 'UserController' és el **nom del controlador** associat.
 
-o bé
+En el cas de les API REST, **no sol ser necessari crear les rutes `create`i `edit`** per tant es pot utilitzar la següent definició de ruta:
 
 `Route::apiResource('users', 'UserController');` 
-
-per no crear les rutes `create` i `edit` en el cas d'una API REST.
 
 Amb la comanda `php artisan route:list` podem veure les **rutes generades**:
 
