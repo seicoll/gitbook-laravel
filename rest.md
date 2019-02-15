@@ -161,6 +161,15 @@ o bé
 
 `php artisan make:controller UserController -r`
 
+El controladors de recursos tindran per defecte **7 mètodes**:
+* `index()`
+* `create()`
+* `store(Request $request)`
+* `show($id)`
+* `edit($id)`
+* `update(Request $request, $id)`
+* `destroy($id)`
+
 
 ## Referències
 
