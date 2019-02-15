@@ -4,7 +4,7 @@
 
 **RESTful** (de l’anglès **RE**presentational **S**tate **T**ransfer)
 
-> **REST **no és un protocol, sinó un conjunt de regles i principis que permeten desenvolupar serveisweb fent servir HTTP com a protocol de comunicacions entre el client i el servei web, i es basa a definir accions sobre recursos mitjançant l’ús dels mètodes GET, POST, PUT i DELETE, inherents d'HTTP.
+> **REST **no és un protocol, sinó un conjunt de regles i principis que permeten desenvolupar serveisweb fent servir HTTP com a protocol de comunicacions entre el client i el servei web, i es basa a definir accions sobre recursos mitjançant l'ús dels mètodes GET, POST, PUT i DELETE, inherents d'HTTP.
 
 Per a REST, qualsevol cosa que es pugui identificar amb un URI (de l’anglès Uniform Resource Identifier) es considera un recurs i, per tant, es pot manipular mitjançant accions (també anomenades verbs) especificades a la capçalera HTTP de les peticions seguint el següent conjunt de regles i principis que regeixen REST:
 
@@ -73,7 +73,7 @@ JSON igual que XML és un llenguatge de representació de dades en mode text, pe
 
 ### Sintaxi JSON
 
-La sintaxi JSON és similar a Javascript, ja que aquest model de representació en prové directament.
+La **sintaxi JSON** és similar a Javascript, ja que aquest model de representació en prové directament.
 
 La sintaxi JSON deriva de la sintaxi de notació JavaScript:
 
@@ -145,7 +145,14 @@ En les especificacions de la pròpia API s'indiquen els codis exactes de retorn 
 | **PUT**/PATCH | users/{id}      | update   | UserController@update | Modificar l'usuari que té el **id** indicat|
 | DELETE     | users/{id}      | destroy  | UserController@destroy| Eliminar l'usuari que té el **id** indicat|
 
+Les peticions a aquestes rutes **no tornaran una vista (amb HTML)**, sinó directament la dada o la llista de dades sol·licitades en format pla, en XML o en **JSON**.
+
+
 ## Rutes de recursos
+
+Si volem definir una API cal que utilitzem el fitxer de rutes `routes/api.php` en lloc de `routes/web.php`.
+
+**A totes les rutes** que especifiquem en `routes/api.php`**se'ls afegirà el prefix `api`**. Pel que si afegim la ruta `users` per tornar el llistat d'usuaris, per fer la consulta haurem d'accedir a `api/users`. 
 
 Podem **definir totes les rutes** necessàries per un recurs utilitzant:
 
