@@ -2,14 +2,13 @@
 
 ## Què és REST?
 
-**RESTful** (de l’anglès **RE**presentational **S**tate **T**ransfer)
+**RESTful** (de l'anglès **RE**presentational **S**tate **T**ransfer)
 
-> **REST **no és un protocol, sinó un conjunt de regles i principis que permeten desenvolupar serveisweb fent servir HTTP com a protocol de comunicacions entre el client i el servei web, i es basa a definir accions sobre recursos mitjançant l'ús dels mètodes GET, POST, PUT i DELETE, inherents d'HTTP.
+> **REST** és un conjunt de regles i principis que permeten desenvolupar serveis web fent servir **HTTP com a protocol de comunicacions** entre el client i el servei web. Es basa a definir accions sobre recursos mitjançant l'ús dels mètodes standards d'HTTP (GET, POST, PUT i DELETE).
 
-Per a REST, qualsevol cosa que es pugui identificar amb un URI (de l’anglès Uniform Resource Identifier) es considera un recurs i, per tant, es pot manipular mitjançant accions (també anomenades verbs) especificades a la capçalera HTTP de les peticions seguint el següent conjunt de regles i principis que regeixen REST:
+Per a REST, qualsevol cosa que es pugui identificar amb un **URI** (de l'anglès **U**niform **R**esource **I**dentifier) es considera un **recurs** i, per tant, es pot manipular mitjançant accions (també anomenades verbs) especificades a la capçalera HTTP de les peticions seguint el següent conjunt de regles i principis que regeixen REST:
 
 ---
-REST prové de l'acrònim Representational State Transfer que és una arquitectura per al programari pensada per sistemes distribuïts. Aquesta arquitectura està basada en el protocol de comunicacions HTTP i es basa en la idea que cada component és un recurs i que cadascun d'ells pot accedir mitjançat una comunicació HTTP via mètodes standard. 
 En l'arquitectura REST, existeix un servidor REST que proveeix accés als recursos i un client REST que accedeix a aquests recursos. Per fer-ho, cada recurs està identificat per una URL o identificadors globals. Per obtenir les dades, REST retorna els recursos en diverses representacions: mode text, en format JSON o en XML. Actualment JSON és el més popular i el que s'utilitza en la majoria de serveis web.
 
 Un servei web REST és un model centrat bàsicament en les dades. Els recursos venen identificats per URLs i poden ser manipulats mitjançant accions especificades en la pròpia capçalera HTTP.
