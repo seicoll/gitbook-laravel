@@ -110,11 +110,14 @@ Els **valors** en JSON poden ser:
 
 ## Codis de retorn HTTP
 
-Alguns serveis REST utilitzen els codis d'estat definits en les especificacions del protocol HTTP per retornar al client el resultat de l'operació sol·licitada. En la capçalera es retorna el codi de resultat i en la part de dades es retorna un missatge o les dades propiament dites, segons estigui definida la API. 
+Alguns serveis REST utilitzen els **codis d'estat** definits en les especificacions del protocol HTTP per retornar al client el resultat de l'operació sol·licitada. 
 
-Altres serveis retornen sempre el codi HTTP 200 de resposta correcta i dins de les dades en format JSON indiquen l'estat de la resposta que normalment s'acompanya d'una descripció. En podeu veure un exemple en els serveis web de Google Maps que trobareu en l'apartat d'exemples.
+* **En la capçalera** es retorna el **codi de resultat** 
+* **En la part de dades** es retorna **un missatge o les dades** pròpiament dites, segons estigui definida la API. 
 
-Els codis HTTP que es retornen són de 3 dígits i segueixen un esquema similar al següent:
+Altres serveis retornen sempre el **codi HTTP 200 de resposta correcta** i dins de les dades en format JSON indiquen l'estat de la resposta que normalment s'acompanya d'una descripció. 
+
+Els **codis HTTP** que es retornen són de 3 dígits i segueixen un esquema similar al següent:
 
 * **Codi 1xx** - El servidor respon que està treballant en la petició
 * **Codi 2xx** - El servidor ha pogut acomplir correctament amb la petició del client
@@ -123,8 +126,6 @@ Els codis HTTP que es retornen són de 3 dígits i segueixen un esquema similar 
 * **Codi 4xx** - El servidor indica que s'ha produït un error en la petició. 
   * Per exemple: 404 el recurs no existeix
 * **Codi 5xx** - El servidor no pot respondre a la vostra petició. 
-
-En les especificacions de la pròpia API s'indiquen els codis exactes de retorn i el motiu que l'ocasiona, per tal de poder-ho tractar en el client. Originalment els codis d'estat HTTP varen dissenyar-se per al món web exclusivament, encara que en l'actualitat s'utilitza en aplicacions híbrides de dispositiu mòbil/web. En l'apartat de més informació podeu trobar més orientacions sobre els codis d'estat dissenyats per al protocol HTTP/1.1
 
 **Més informació**: [RFC HTTP/1.1. Response Status Code](https://tools.ietf.org/html/rfc7231#page-47)
 
