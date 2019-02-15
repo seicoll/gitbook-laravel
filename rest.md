@@ -158,17 +158,25 @@ En el cas de les API REST, **no sol ser necessari crear les rutes `create`i `edi
 
 `Route::apiResource('users', 'UserController');` 
 
+Aquesta línia de ruta **crea per si sola múltiples rutes** per gestionar tots els tipus de peticions RESTful. A més, el controlador haurà de disposar de tots els mètodes necessaris per respondre a totes les peticions corresponents.
+
 Amb la comanda `php artisan route:list` podem veure les **rutes generades**:
 
 ![](/assets/API_rutes.PNG)
 
-I també podem crear la classe **controlador del recurs** amb tots els mètodes necessaris:
+## Controlador de recursos RESTful
+
+Laravel incorpora un tipus especial de controlador, anomenat **controlador de recurs** (_recource controller_), que facilita la construcció de controladors tipus RESTful . 
+
+Podem crear el **controlador del recurs** amb tots els mètodes necessaris utilitzant la comanda:
 
  `php artisan make:controller UserController --resource`
  
 o bé
 
 `php artisan make:controller UserController -r`
+
+Això crearia el controlador `UserController` que (incloent tots els mètodes necessaris)
 
 El controladors de recursos tindran per defecte **7 mètodes**:
 * `index()`
