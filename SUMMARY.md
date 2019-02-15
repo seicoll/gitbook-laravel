@@ -27,6 +27,7 @@
 * [Capítol 5: Rest](capitol-5-rest.md)
   * [REST](rest.md)
   * [Seguretat en serveis REST](rest_seg.md)
-* [Paquets addicionals](paquets.md)
+  * [Exercicis](https://ajgallego.gitbooks.io/laravel-5/content/capitulo_5_ejercicios.html)
+* [Anex: Paquets addicionals](paquets.md)
 
 
