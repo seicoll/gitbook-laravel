@@ -16,6 +16,8 @@ Un servei web REST és un model centrat bàsicament en les dades. Els recursos v
 
 ---
 
+![](/assets/RESTful-API.png)
+
 ## Mètodes HTTP
 
 La url no ha d'indicar l'operació a realitzar. 
