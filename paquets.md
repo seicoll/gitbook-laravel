@@ -2,10 +2,10 @@
 
 ## Formularis
 
-* Forms amb LaravelCollective: 
+* Forms amb **LaravelCollective**: 
 [https://laravelcollective.com/docs/master/html](https://laravelcollective.com/docs/master/html)
 
-* Validació de forms: 
+* **Validació de forms:** Laravel ens ofereix un mecanisme de validació de formularis molt potent i efectiu. 
 [https://laravel.com/docs/5.7/validation](https://laravel.com/docs/5.7/validation)
 
 ## Paquets addicionals
