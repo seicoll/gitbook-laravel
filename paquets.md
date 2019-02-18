@@ -3,11 +3,10 @@
 
 * Forms amb LaravelCollective: [https://laravelcollective.com/docs/master/html](https://laravelcollective.com/docs/master/html)
 
-* Validació de forms: https://laravel.com/docs/5.5/validation
+* Validació de forms: [https://laravel.com/docs/5.7/validation
+](https://laravel.com/docs/5.7/validation)
 
 ## Paquets addicionals
-
-
 
 * [Laravel Nova](https://nova.laravel.com/): Permet crear fàcilment un panell d'administració pel nostre site.
 
