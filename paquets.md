@@ -10,4 +10,4 @@
 
 * [Lumen](https://lumen.laravel.com/): Micro-framework de Laravel per aplicacions petites o APIs.
 
-* [CRUDBooster](http://crudbooster.com/): Generador CRUD (read: Create, Read, Update, Delete).
+* [CRUDBooster](http://crudbooster.com/): Generador CRUD (Create, Read, Update, Delete).
