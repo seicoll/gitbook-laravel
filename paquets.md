@@ -1,4 +1,11 @@
-# Paquets addicionals
+
+## Temes a ampliar
+
+* Forms amb LaravelCollective: [https://laravelcollective.com/docs/master/html](https://laravelcollective.com/docs/master/html)
+
+* Validació de forms: https://laravel.com/docs/5.5/validation
+
+## Paquets addicionals
 
 
 
