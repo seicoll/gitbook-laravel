@@ -8,11 +8,25 @@
 * **Validació de forms:** Laravel ens ofereix un mecanisme de validació de formularis molt potent i efectiu. 
 [https://laravel.com/docs/5.7/validation](https://laravel.com/docs/5.7/validation)
 
+## CRUD Generators 
+
+> CRUD = Create, Read, Update, Delete
+
+Permeten crear fàcilment un panell d'administració.
+
+* [Laravel Nova](https://nova.laravel.com/): Desenvolupat pels creador de Laravel per convertir-te en el desenvolupador més productiu de la galàxia.
+
+* [Voyager](https://laravelvoyager.com/): Laravel Admin Package that includes BREAD(CRUD) operations, a media manager, menu builder, and much more
+
+* [CRUDBooster](http://crudbooster.com/): Generador CRUD  i API.
+
+* [Laravel Generator](http://labs.infyom.com/laravelgenerator/):  Generate CRUD, APIs, Test Cases and Swagger Documentation
+
+ 
+
 ## Paquets addicionals
 
-* [Laravel Nova](https://nova.laravel.com/): Permet crear fàcilment un panell d'administració pel nostre site.
 
-* [CRUDBooster](http://crudbooster.com/): Generador CRUD (Create, Read, Update, Delete).
 
 * [Laravel Socialite](https://laravel.com/docs/5.7/socialite): Autenticació amb proveïdors OAuth (Facebook, Twitter, LinkedIn, Google, GitHub, GitLab i Bitbucket).
 
