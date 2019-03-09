@@ -6,6 +6,8 @@ Laravel inclou el seu propi sistema **ORM** anomenat **_Eloquent_** que ens prop
 
 > Un **ORM (Object-Relational mapping)** és un tècnica de programació per convertir dades entre un llenguatge de programació orientat a objectes i una base de dades relacional.
 
+Amb **_Eloquent_** podrem accedir als registres de la base de dades com si fossin **objectes** de PHP sense haver d'executar sentències SQL per obtenir les dades.
+
 **Per cada taula de la base de dades hem de definir el seu corresponent model** que s'utilitzarà per interactuar des de codi amb la taula.
 
 En Laravel, els **models** es guarden a la carpeta `app`.
