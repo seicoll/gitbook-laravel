@@ -29,6 +29,8 @@ Segons els estàndards de HTTP, els mètodes s'han d'utilitzar en l'arquitectura
 * **DELETE**: elimina un recurs
 * **OPTIONS**: per a d'altres operacions sobre un recurs.
 
+![](/assets/HTTP_verbs.PNG)
+
 ## JSON
 
 > **JSON** (prové de l'acrònim **J**ava**S**cript **O**bject **N**otation) és un standard obert basat en text per a l'intercanvi de dades i que pot ser directament llegit per humans. 
@@ -126,6 +128,8 @@ Els **codis HTTP** que es retornen són de 3 dígits i segueixen un esquema simi
 * **Codi 4xx** - El servidor indica que s'ha produït un error en la petició. 
   * Per exemple: 404 el recurs no existeix
 * **Codi 5xx** - El servidor no pot respondre a la vostra petició. 
+
+![](/assets/HTTP_codis_estat.PNG)
 
 **Més informació**: [RFC HTTP/1.1. Response Status Code](https://tools.ietf.org/html/rfc7231#page-47)
 
