@@ -31,7 +31,15 @@ Segons els estàndards de HTTP, els mètodes s'han d'utilitzar en l'arquitectura
 
 ![](/assets/HTTP_verbs.PNG)
 
-## JSON
+## Formats de dades
+
+Les APIs poden retornar la informació sol·licitada en **diferents formats**:
+
+> El format més comú **JSON**.
+
+![](/assets/API_formats.PNG)
+
+### JSON
 
 > **JSON** (prové de l'acrònim **J**ava**S**cript **O**bject **N**otation) és un standard obert basat en text per a l'intercanvi de dades i que pot ser directament llegit per humans. 
 
@@ -69,7 +77,7 @@ JSON igual que XML és un llenguatge de representació de dades en mode text, pe
 </estudiants>
 ```
 
-### Sintaxi JSON
+#### Sintaxi JSON
 
 La **sintaxi JSON** és similar a Javascript, ja que aquest model de representació en prové directament.
 
